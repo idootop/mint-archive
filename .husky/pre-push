@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# 更新提交 changelog
+yarn changelog
