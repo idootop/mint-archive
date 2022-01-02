@@ -6,7 +6,7 @@ const root = path.resolve();
 function main(): void {
   const configPath = root + '/.changelogrc.js';
   const updateChangelog = `conventional-changelog -p ${configPath} -i CHANGELOG.md -s -r 0`;
-  const commit = 'git commit -am ":dizzy: other: 更新changelog"';
+  const commit = 'git add CHANGELOG.md && git commit -m ":dizzy: other: 更新changelog"';
   const command = [updateChangelog, commit].join(' && ');
   exec(command, (err) => {
     if (err !== null) {
