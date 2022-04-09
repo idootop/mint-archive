@@ -12,8 +12,9 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "jsx": "preserve",
+    "baseUrl": ".",
     "paths": {
       "@/*": ["*"]
     }
@@ -26,5 +27,5 @@
     "next.config.js",
     ".commitlintrc.js"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "*.test.ts"]
 }
